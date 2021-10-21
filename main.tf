@@ -32,3 +32,7 @@ resource "digitalocean_tag" "tag_cost_center" {
 resource "digitalocean_tag" "tag_label" {
   name = "${var.tag_label}"
 }
+
+resource "digitalocean_tag" "tag_role" {
+  name = "${var.tag_role}"
+}

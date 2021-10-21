@@ -34,3 +34,9 @@ variable "tag_label"{
     default = "default"
 }
 
+variable "tag_role"{
+    description = "Role Tag, for ex, nginx or apache, mysql etc."
+    type = string
+    default = "default"
+}
+
