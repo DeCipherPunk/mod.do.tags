@@ -144,7 +144,7 @@ output "tag_label_total_resources_count" {
   value = digitalocean_tag.tag_label.total_resource_count
 }
 
-output "tag_labelvm_count" {
+output "tag_label_vm_count" {
   value = digitalocean_tag.tag_label.droplets_count
 }
 
@@ -154,4 +154,31 @@ output "tag_label_disk_count" {
 
 output "tag_label_disk_snapshots_count" {
   value = digitalocean_tag.tag_label.volume_snapshots_count
+}
+
+
+
+output "tag_role_id" {
+  value = digitalocean_tag.tag_role.id
+}
+
+
+output "tag_role_key" {
+  value = digitalocean_tag.tag_role.name
+}
+
+output "tag_role_total_resources_count" {
+  value = digitalocean_tag.tag_role.total_resource_count
+}
+
+output "tag_role_vm_count" {
+  value = digitalocean_tag.tag_role.droplets_count
+}
+
+output "tag_role_disk_count" {
+  value = digitalocean_tag.tag_role.volumes_count
+}
+
+output "tag_role_disk_snapshots_count" {
+  value = digitalocean_tag.tag_role.volume_snapshots_count
 }
